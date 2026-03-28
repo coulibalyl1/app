@@ -26,11 +26,11 @@ Abidjan=st.text_input("Abidjan")
 Yakro = st.text_input("Yakro")
 Ferke = st.text_input("Ferké")
 Kong = st.text_input("Kong")
-Koye_f = st.number_input("Koye_f", min_value=0, step=1000)
-Koye= f"{int(Koye_f):,} FCFA"
+Koye = st.number_input("Koye", min_value=0, step=1000)
+Koye_f= f"{int(Koye):,} FCFA"
 
 # 🔹 Bouton
 if st.button("Envoyer"):
-    if Date or Abidjan or Yakro or Ferke or Kong or Koye:
-        sheet.append_row([Date,Abidjan,Yakro, Ferke, Kong, Koye])
+    if Date or Abidjan or Yakro or Ferke or Kong or Koye_f:
+        sheet.append_row([Date,Abidjan,Yakro, Ferke, Kong, Koye_f])
         st.success("✅ Données envoyées dans Google Sheets !")
