@@ -18,16 +18,17 @@ client = gspread.authorize(creds)
 sheet = client.open("Form_dat").sheet1  # ⚠️ mets le nom exact de ton fichier
 
 # 🔹 Interface utilisateur
-st.title("📋 Formulaire simple")
-
-Ferke = st.text_input("ferké")
-Kong = st.text_input("kong")
-Koye = st.text_input("koye")
+st.title("CL TRANSPORT")
+Abidjan=st.text_input("Abidjan")
+Yakro = st.text_input("Yakro")
+Ferke = st.text_input("Ferké")
+Kong = st.text_input("Kong")
+Koye = st.text_input("Koye")
 
 # 🔹 Bouton
 if st.button("Envoyer"):
-    if nom and age and ville:
-        sheet.append_row([nom, age, ville])
+    if Abidjan and Yakro and Ferke and Kong and Koye:
+        sheet.append_row([Abidjan,Yakro, Ferke, Kong, Koye])
         st.success("✅ Données envoyées dans Google Sheets !")
     else:
         st.error("❌ Remplis tous les champs")
