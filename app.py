@@ -15,7 +15,7 @@ creds = Credentials.from_service_account_info(
 
 client = gspread.authorize(creds)
 
-sheet = client.open("form_data").sheet1  # ⚠️ mets le nom exact de ton fichier
+sheet = client.open("Form_dat").sheet1  # ⚠️ mets le nom exact de ton fichier
 
 # 🔹 Interface utilisateur
 st.title("📋 Formulaire simple")
