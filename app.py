@@ -20,9 +20,10 @@ sheet = client.open("Form_dat").sheet1  # ⚠️ mets le nom exact de ton fichie
 # 🔹 Interface utilisateur
 st.title("📋 Formulaire simple")
 
-nom = st.text_input("Nom")
-age = st.text_input("Âge")
-ville = st.text_input("Ville")
+yakro = st.text_input("yakro")
+Ferké = st.text_input("ferké")
+Kong = st.text_input("kong")
+Koye = st.text_input("koye")
 
 # 🔹 Bouton
 if st.button("Envoyer"):
