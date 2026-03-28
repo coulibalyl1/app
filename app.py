@@ -26,7 +26,7 @@ Abidjan=st.text_input("Abidjan")
 Yakro = st.text_input("Yakro")
 Ferke = st.text_input("Ferké")
 Kong = st.text_input("Kong")
-Koye = st.number_input("Koye")
+Koye = st.number_input("Koye",min_value=0, step=1000,format="%d")
 
 # 🔹 Bouton
 if st.button("Envoyer"):
