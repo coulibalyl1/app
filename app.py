@@ -26,7 +26,8 @@ Abidjan=st.text_input("Abidjan")
 Yakro = st.text_input("Yakro")
 Ferke = st.text_input("Ferké")
 Kong = st.text_input("Kong")
-Koye = st.text_input("Koye")
+Koye_f = st.number_input("Koye_f", min_value=0, step=1000)
+Koye= f"{int(Koye_f):,} FCFA"
 
 # 🔹 Bouton
 if st.button("Envoyer"):
