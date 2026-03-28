@@ -1,6 +1,7 @@
 import streamlit as st
 import gspread
 from google.oauth2.service_account import Credentials
+from datetime import datetime
 
 # 🔹 Connexion à Google Sheets
 scope = [
@@ -19,7 +20,8 @@ sheet = client.open("Form_dat").sheet1  # ⚠️ mets le nom exact de ton fichie
 
 # 🔹 Interface utilisateur
 st.title("CL TRANSPORT POINTS")
-Date =st.text_input("Date")
+date_input = st.date_input("Date")
+Date = date_input.strftime("%d/%m/%Y")
 Abidjan=st.text_input("Abidjan")
 Yakro = st.text_input("Yakro")
 Ferke = st.text_input("Ferké")
