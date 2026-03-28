@@ -21,7 +21,7 @@ sheet = client.open("Form_dat").sheet1  # ⚠️ mets le nom exact de ton fichie
 st.title("📋 Formulaire simple")
 
 yakro = st.text_input("yakro")
-Ferké = st.text_input("ferké")
+Ferke = st.text_input("ferké")
 Kong = st.text_input("kong")
 Koye = st.text_input("koye")
 
