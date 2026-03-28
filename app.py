@@ -27,7 +27,7 @@ Koye = st.text_input("Koye")
 
 # 🔹 Bouton
 if st.button("Envoyer"):
-    if Abidjan and Yakro and Ferke and Kong and Koye:
+    if Abidjan or Yakro or Ferke or Kong or Koye:
         sheet.append_row([Abidjan,Yakro, Ferke, Kong, Koye])
         st.success("✅ Données envoyées dans Google Sheets !")
     else:
