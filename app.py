@@ -31,5 +31,5 @@ Koye = st.number_input("Koye")
 # 🔹 Bouton
 if st.button("Envoyer"):
     if Date or Abidjan or Yakro or Ferke or Kong or Koye:
-        sheet.append_row([Date,Abidjan,Yakro, Ferke, Kong, f"{int(Koye):,}"])
+        sheet.append_row([Date,Abidjan,Yakro, Ferke, Kong, Koye])
         st.success("✅ Données envoyées dans Google Sheets !")
