@@ -19,6 +19,7 @@ sheet = client.open("Form_dat").sheet1  # ⚠️ mets le nom exact de ton fichie
 
 # 🔹 Interface utilisateur
 st.title("CL TRANSPORT POINTS")
+Date =st.text_input("Date")
 Abidjan=st.text_input("Abidjan")
 Yakro = st.text_input("Yakro")
 Ferke = st.text_input("Ferké")
@@ -27,6 +28,6 @@ Koye = st.text_input("Koye")
 
 # 🔹 Bouton
 if st.button("Envoyer"):
-    if Abidjan or Yakro or Ferke or Kong or Koye:
+    if Date or Abidjan or Yakro or Ferke or Kong or Koye:
         sheet.append_row([Abidjan,Yakro, Ferke, Kong, Koye])
         st.success("✅ Données envoyées dans Google Sheets !")
