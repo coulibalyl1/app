@@ -19,7 +19,7 @@ client = gspread.authorize(creds)
 sheet = client.open("Form_dat").sheet1  # ⚠️ mets le nom exact de ton fichier
 
 # 🔹 Interface utilisateur
-st.title("CL TRANSPORT POINTS")
+st.title("CL TRANSPORT: BAGAGES")
 date_input = st.date_input("Date")
 Date = date_input.strftime("%d/%m/%Y")
 Abidjan=st.text_input("Abidjan")
